@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Главная";
+}
+
+<main>
+    <h1>Задание с фруктами</h1>
+    <p>Выберите метод для представления списка фруктов:</p>
+
+    <div class="list-group">
+        @Html.ActionLink("Метод 1: список фруктов", "FirstViewMethod", "Vegetables", null, new { @class = "list-group-item list-group-item-action" })
+        @Html.ActionLink("Метод 2: отсортированные фрукты", "SecondViewMethod", "Vegetables", null, new { @class = "list-group-item list-group-item-action" })
+        @Html.ActionLink("Метод 3: группировка по первой букве", "ThirdViewMethod", "Vegetables", null, new { @class = "list-group-item list-group-item-action" })
+    </div>
+</main>
